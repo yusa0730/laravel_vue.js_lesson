@@ -58,7 +58,9 @@
                 <input class="ranking-radio" type="radio" name="ranking-radio" value="3" />今週
               </label>
             </div>
-            <div class="home_quiz__ranking-chart"></div>
+            <div class="home_quiz__ranking-chart">
+              <bar-chart></bar-chart>
+            </div>
           </section>
           <section class="home__notice">
             <h2 class="home__notice-h2">
@@ -81,6 +83,7 @@
 import TheHeader from "../layout/TheHeader";
 import TheFooter from "../layout/TheFooter";
 import TheSidebar from "../layout/TheSidebar";
+import BarChart from "../module/BarChart";
 
 // Importしたファイルをコンポーネントとして使えるように定義すると言う意味です。 Importして定義されたコンポーネントファイルはhtmlタグのように使用できます。 TheHeaderであれば、<the-header></the-header>や<the-header/> TheFooterであれば<the-footer></the-footer>や<the-footer/>として使用可能です。
 export default {
@@ -88,6 +91,7 @@ export default {
     TheHeader,
     TheFooter,
     TheSidebar,
+    BarChart,
   }
 };
 
